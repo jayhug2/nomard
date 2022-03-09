@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.js": "/nomard/static/js/main.72e37c37.js",
+    "main.css": "/nomard/static/css/main.25d91d94.css",
+    "main.js": "/nomard/static/js/main.468fa1d4.js",
     "index.html": "/nomard/index.html",
-    "main.72e37c37.js.map": "/nomard/static/js/main.72e37c37.js.map"
+    "main.25d91d94.css.map": "/nomard/static/css/main.25d91d94.css.map",
+    "main.468fa1d4.js.map": "/nomard/static/js/main.468fa1d4.js.map"
   },
   "entrypoints": [
-    "static/js/main.72e37c37.js"
+    "static/css/main.25d91d94.css",
+    "static/js/main.468fa1d4.js"
   ]
 }
