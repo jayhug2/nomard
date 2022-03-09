@@ -1,18 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-</head>
 <body>
-    <span>Total Counter : 0</span>
-    <button id="btn">Click me!</button>
+    <div id="root"></div>
 </body>
-<script>
-    let counter = 0;
-    const button = document.getElementById("btn");
-    const span = document.querySelector("span");
-    function handleClick() {
-        counter += 1;
-        span.innerText = `Total Counter ${counter}`;
+<script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel">
+    
+
+    
+    function Btn({text, changeValue}) {
+        console.log(text+"was render")
+        return (
+            <button 
+            style={{
+                color: "#fff",
+                backgroundColor:"tomato",
+                border: 0,
+                borderRadius:"10px",
+                width:"150px",
+                height:"30px",
+            }}
+            onClick={changeValue}
+            >
+                {text}
+            </button>
+        )
     }
-    button.addEventListener("click", handleClick);
+    const MemorizeBtn = React.memo(Btn);
+    function App() {
+        const [value, setValue] = React.useState("Save Changes")
+        const changeValue = () => setValue("Revert Changes");
+        return (
+            <div>
+                <MemorizeBtn text={value} changeValue={changeValue}/>
+                <MemorizeBtn text="Continue"/>
+            </div>
+        )
+    }
+    const root =  document.getElementById("root");
+    ReactDOM.render(<App />, root);
 </script>
 </html>
