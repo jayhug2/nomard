@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/nomard/static/css/main.25d91d94.css",
-    "main.js": "/nomard/static/js/main.468fa1d4.js",
+    "main.css": "/nomard/static/css/main.abce3b56.css",
+    "main.js": "/nomard/static/js/main.12fe2039.js",
     "index.html": "/nomard/index.html",
-    "main.25d91d94.css.map": "/nomard/static/css/main.25d91d94.css.map",
-    "main.468fa1d4.js.map": "/nomard/static/js/main.468fa1d4.js.map"
+    "main.abce3b56.css.map": "/nomard/static/css/main.abce3b56.css.map",
+    "main.12fe2039.js.map": "/nomard/static/js/main.12fe2039.js.map"
   },
   "entrypoints": [
-    "static/css/main.25d91d94.css",
-    "static/js/main.468fa1d4.js"
+    "static/css/main.abce3b56.css",
+    "static/js/main.12fe2039.js"
   ]
 }
